@@ -29,8 +29,84 @@
           <li><a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button class="burger-btn" type="button" data-menu-open>
+        <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
   </header>
+
+  <div class="mobile-menu" data-menu>
+  <div class="mobile-menu-container">
+    <button type="button" class="mobile-menu-btn" data-menu-close>
+      <svg width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="./index.html" class="mobile-nav-link current">Studio</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contacts" class="mobile-nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <address class="mobile-contacts">
+      <ul class="mobile-contacts-list">
+        <li>
+          <a href="tel:+110001111111" class="mobile-contact-phone">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mobile-contact-email">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+    </address>
+
+    <ul class="mobile-social-list">
+      <li class="social-item">
+        <a class="social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
   <main>
     <section class="hero">
@@ -89,7 +165,11 @@
     <h2 class="section-title">Our Team</h2>
     <ul class="team-list">
       <li class="team-item">
-        <img src="./images/photo-1.jpg" alt="Mark Guerrero" width="264" height="260">
+        <img src="./images/photo-1.jpg"
+        srcset="
+            ./images/photo-1.1x.jpg 1x,
+            ./images/photo-1.2x.jpg 2x"
+        alt="Mark Guerrero" width="264" height="260">
         <div class="team-info">
           <h3 class="team-name">Mark Guerrero</h3>
           <p class="team-position">Product Designer</p>
@@ -138,7 +218,11 @@
         </div>
       </li>
       <li class="team-item">
-        <img src="./images/photo-2.jpg" alt="Tom Ford" width="264" height="260">
+        <img src="./images/photo-2.jpg" 
+        srcset="
+            ./images/photo-2.1x.jpg 1x,
+            ./images/photo-2.2x.jpg 2x"
+        alt="Tom Ford" width="264" height="260">
         <div class="team-info">
           <h3 class="team-name">Tom Ford</h3>
           <p class="team-position">Frontend Developer</p>
@@ -187,7 +271,11 @@
         </div>
       </li>
       <li class="team-item">
-        <img src="./images/photo-3.jpg" alt="Camila Garcia" width="264" height="260">
+        <img src="./images/photo-3.jpg" 
+        srcset="
+            ./images/photo-3.1x.jpg 1x,
+            ./images/photo-3.2x.jpg 2x"
+        alt="Camila Garcia" width="264" height="260">
         <div class="team-info">
           <h3 class="team-name">Camila Garcia</h3>
           <p class="team-position">Marketing</p>
@@ -236,7 +324,11 @@
         </div>
       </li>
       <li class="team-item">
-        <img src="./images/photo-4.jpg" alt="Daniel Wilson" width="264" height="260">
+        <img src="./images/photo-4.jpg" 
+        srcset="
+            ./images/photo-4.1x.jpg 1x,
+            ./images/photo-4.2x.jpg 2x"
+        alt="Daniel Wilson" width="264" height="260">
         <div class="team-info">
           <h3 class="team-name">Daniel Wilson</h3>
           <p class="team-position">UI Designer</p>
@@ -294,7 +386,11 @@
     <ul class="portfolio-list">
       <li class="portfolio-item">
         <div class="portfolio-thumb">
-          <img src="./images/photo-5.jpg" alt="Banking App" width="360" height="300">
+          <img src="./images/photo-5.jpg" 
+          srcset="
+          ./images/photo-5.1x.jpg 1x,
+          ./images/photo-5.2x.jpg 2x"
+          alt="Banking App" width="360" height="300">
           <div class="overlay">
             <p class="overlay-text">
               14 stylish and user-friendly interface screens for an online banking app
@@ -309,7 +405,11 @@
 
       <li class="portfolio-item">
         <div class="portfolio-thumb">
-          <img src="./images/photo-6.jpg" alt="Cashless Payment" width="360" height="300">
+          <img src="./images/photo-6.jpg" 
+          srcset="
+          ./images/photo-6.1x.jpg 1x,
+          ./images/photo-6.2x.jpg 2x"
+          alt="Cashless Payment" width="360" height="300">
           <div class="overlay">
             <p class="overlay-text">
               Marketing campaign for cashless payment solution
@@ -324,7 +424,11 @@
 
       <li class="portfolio-item">
         <div class="portfolio-thumb">
-          <img src="./images/photo-7.jpg" alt="Meditation App" width="360" height="300">
+          <img src="./images/photo-7.jpg" 
+          srcset="
+          ./images/photo-7.1x.jpg 1x,
+          ./images/photo-7.2x.jpg 2x"
+          alt="Meditation App" width="360" height="300">
           <div class="overlay">
             <p class="overlay-text">
               Mobile app for guided meditation and mindfulness
@@ -339,7 +443,11 @@
 
       <li class="portfolio-item">
         <div class="portfolio-thumb">
-          <img src="./images/photo-8.jpg" alt="Taxi Service" width="360" height="300">
+          <img src="./images/photo-8.jpg"
+          srcset="
+          ./images/photo-8.1x.jpg 1x,
+          ./images/photo-8.2x.jpg 2x"
+          alt="Taxi Service" width="360" height="300">
           <div class="overlay">
             <p class="overlay-text">
               Taxi booking service with real-time tracking feature
@@ -354,7 +462,11 @@
 
       <li class="portfolio-item">
         <div class="portfolio-thumb">
-          <img src="./images/photo-9.jpg" alt="Screen Illustrations" width="360" height="300">
+          <img src="./images/photo-9.jpg" 
+          srcset="
+          ./images/photo-9.1x.jpg 1x,
+          ./images/photo-9.2x.jpg 2x"
+          alt="Screen Illustrations" width="360" height="300">
           <div class="overlay">
             <p class="overlay-text">
               A series of creative and modern illustrations for digital screens
@@ -369,7 +481,11 @@
 
       <li class="portfolio-item">
         <div class="portfolio-thumb">
-          <img src="./images/photo-10.jpg" alt="Online Courses" width="360" height="300">
+          <img src="./images/photo-10.jpg"
+          srcset="
+          ./images/photo-10.1x.jpg 1x,
+          ./images/photo-10.2x.jpg 2x"
+          alt="Online Courses" width="360" height="300">
           <div class="overlay">
             <p class="overlay-text">
               Educational platform with a variety of online courses
@@ -470,9 +586,9 @@
   </div>
 </footer>
 
-<div class="modal-overlay">
+<div class="modal-overlay" data-modal>
   <div class="modal">
-    <button type="button" class="modal-close">
+    <button type="button" class="modal-close" data-modal-close>
       <svg width="8" height="8">
         <use href="./images/icons.svg#icon-close"></use>        
         </svg>
@@ -490,7 +606,8 @@
         <input type="text" 
         name="user-name" 
         id="user-name"
-        class="modal-input">
+        class="modal-input"
+        required>
         <svg class="modal-input-icon" width="18" height="24">
           <use href="./images/icons.svg#icon-person"></use>
         </svg>
@@ -503,7 +620,8 @@
         <input type="tel" 
         name="user-phone" 
         id="user-phone"
-        class="modal-input">
+        class="modal-input"
+        required>
         <svg class="modal-input-icon" width="18" height="24">
           <use href="./images/icons.svg#icon-phone"></use>
         </svg>
@@ -516,7 +634,8 @@
         <input type="email" 
         name="user-email" 
         id="user-email"
-        class="modal-input">
+        class="modal-input"
+        required>
         <svg class="modal-input-icon" width="18" height="24">
           <use href="./images/icons.svg#icon-email"></use>
         </svg>
@@ -533,7 +652,8 @@
       <label class="modal-checkbox">
         <input type="checkbox" 
         class="checkbox-input visually-hidden" 
-        name="policy">
+        name="policy"
+        required>
         <span class="checkbox-custom">
         <svg width="16" height="16">
           <use href="./images/icons.svg#icon-yes"></use>
@@ -552,3 +672,4 @@
 
 </body>
 </html>
+
