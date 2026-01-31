@@ -380,7 +380,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+  }
 }
 
 .team-item {
@@ -448,17 +456,16 @@ body {
     flex-wrap: wrap;
   }
 
-  .team-item {
-    width: calc((100% - 24px)/2);
+.team-item {
+    width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .team-item {
-    width: calc((100% - 72px)/4);
+    width: calc((100% - 72px) / 4);
   }
 }
-
 
 .portfolio {
   padding: 72px 0;
@@ -943,6 +950,16 @@ body {
   }
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    gap: 76px;
+  }
+}
 
 
 
