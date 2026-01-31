@@ -229,21 +229,25 @@ body {
 
 
 .hero {
+  max-width: 320px;
+  margin: 0 auto;
   padding: 72px 0;
-  background:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/hero-mobile.jpg");
+  background-color: #2e2f42;
+  background-image:
+    linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+    url("../images/photo-11.1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
 
 .hero-title {
   max-width: 216px;
+  margin: 0 auto 48px;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
-  margin: 0 auto 72px;
+  color: #ffffff;
 }
 
 .hero-btn {
@@ -272,26 +276,29 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     padding: 112px 0;
     background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url("../images/hero-tablet.jpg");
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url("../images/photo-11.2x.jpg");
   }
 
   .hero-title {
     max-width: 496px;
     font-size: 56px;
-    margin-bottom: 36px;
+    line-height: 1.07;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .hero {
+    max-width: 1440px;
     padding: 188px 0;
     background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url("../images/hero-desktop.jpg");
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url("../images/photo-11.jpg");
   }
+}
 
   .hero-title {
     max-width: 672px;
@@ -927,6 +934,13 @@ body {
 
 .checkbox-input:checked + .checkbox-custom svg {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
 }
 
 
