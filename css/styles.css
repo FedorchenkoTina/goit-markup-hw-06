@@ -48,7 +48,6 @@ body {
   margin: 0 auto;
 }
 
-/* ================= HEADER (mobile first) ================= */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -69,7 +68,6 @@ body {
   display: none;
 }
 
-/* ---------- logo ---------- */
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -87,7 +85,6 @@ body {
   color: #2e2f42;
 }
 
-/* ---------- navigation (mobile hidden) ---------- */
 
 .nav-list {
   display: none;
@@ -126,7 +123,6 @@ body {
   border-radius: 2px;
 }
 
-/* ---------- contacts (mobile hidden) ---------- */
 
 .contacts {
   display: none;
@@ -153,7 +149,6 @@ body {
   color: #404bbf;
 }
 
-/* ---------- burger ---------- */
 
 .burger-btn {
   padding: 0;
@@ -166,7 +161,6 @@ body {
   fill: #2f2f37;
 }
 
-/* ================= MOBILE MENU ================= */
 
 .mobile-menu {
   position: fixed;
@@ -194,7 +188,6 @@ body {
   justify-content: space-between;
 }
 
-/* close button */
 
 .menu-close-btn {
   position: absolute;
@@ -204,7 +197,6 @@ body {
   background: transparent;
 }
 
-/* mobile nav */
 
 .mobile-nav-list {
   display: flex;
@@ -224,7 +216,6 @@ body {
   color: #404bbf;
 }
 
-/* mobile contacts */
 
 .mobile-contacts {
   margin-bottom: 48px;
@@ -248,14 +239,12 @@ body {
   color: #4d5ae5;
 }
 
-/* mobile socials */
 
 .mobile-socials {
   display: flex;
   gap: 40px;
 }
 
-/* ================= TABLET ================= */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -296,7 +285,6 @@ body {
   }
 }
 
-/* ================= DESKTOP ================= */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -328,9 +316,7 @@ body {
   }
 }
 
-/* ================= HERO ================= */
 
-/* MOBILE */
 .hero {
   max-width: 320px;
   margin: 0 auto;
@@ -379,7 +365,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* TABLET */
+
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
@@ -396,7 +382,7 @@ body {
   }
 }
 
-/* DESKTOP */
+
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1440px;
@@ -413,7 +399,6 @@ body {
   }
 }
 
-/* ========== FEATURES SECTION ========== */
 
 .features {
   padding: 72px 0;
@@ -446,7 +431,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ===== TABLET ===== */
 
 @media screen and (min-width: 768px) {
   .features {
@@ -464,7 +448,6 @@ body {
   }
 }
 
-/* ===== DESKTOP ===== */
 
 @media screen and (min-width: 1158px) {
   .features {
@@ -502,7 +485,6 @@ body {
   }
 }
 
-/* ========== TEAM SECTION ========== */
 
 .team {
   background-color: #f4f4fd;
@@ -556,7 +538,6 @@ body {
   padding: 0; 
 }
 
-/* ===== SOCIALS ===== */
 
 .team .social-list {
   display: flex;
@@ -586,7 +567,6 @@ body {
   fill: #f4f4fd;
 }
 
-/* ===== TABLET ===== */
 
 @media screen and (min-width: 768px) {
   .team {
@@ -606,7 +586,6 @@ body {
   }
 }
 
-/* ===== DESKTOP ===== */
 
 @media screen and (min-width: 1158px) {
   .team {
@@ -624,8 +603,6 @@ body {
 }
 
 
-/* ========== PORTFOLIO SECTION ========== */
-
 .portfolio {
   padding: 72px 0;
 }
@@ -636,7 +613,6 @@ body {
   gap: 48px;
 }
 
-/* ===== CARD ===== */
 
 .portfolio-item {
   width: 100%;
@@ -651,7 +627,6 @@ body {
     0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-/* ===== IMAGE + OVERLAY ===== */
 
 .portfolio-thumb {
   position: relative;
@@ -708,7 +683,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ===== TEXT BLOCK ===== */
 
 .portfolio-info {
   padding: 32px 16px;
@@ -731,7 +705,6 @@ body {
   color: #434455;
 }
 
-/* ===== TABLET ===== */
 
 @media screen and (min-width: 768px) {
   .portfolio {
@@ -749,7 +722,6 @@ body {
   }
 }
 
-/* ===== DESKTOP ===== */
 
 @media screen and (min-width: 1158px) {
   .portfolio {
@@ -765,7 +737,6 @@ body {
   }
 }
 
-/* ========== FOOTER ========== */
 
 .footer {
   background-color: #2e2f42;
@@ -773,7 +744,6 @@ body {
   color: #f4f4fd;
 }
 
-/* ===== CONTAINER ===== */
 
 .footer-container {
   display: flex;
@@ -783,7 +753,6 @@ body {
   text-align: center;
 }
 
-/* ===== GROUP ===== */
 
 .footer-group {
   display: flex;
@@ -792,7 +761,6 @@ body {
   align-items: center;
 }
 
-/* ===== LEFT BLOCK ===== */
 
 .footer-left .logo {
   display: inline-block;
@@ -804,7 +772,6 @@ body {
   line-height: 1.5;
 }
 
-/* ===== SOCIAL ===== */
 
 .footer-social-title {
   margin-bottom: 16px;
@@ -840,7 +807,6 @@ body {
   fill: #f4f4fd;
 }
 
-/* ===== SUBSCRIBE ===== */
 
 .form {
   display: flex;
@@ -899,7 +865,6 @@ body {
   fill: #ffffff;
 }
 
-/* ===== TABLET ===== */
 
 @media screen and (min-width: 768px) {
   .footer {
@@ -930,7 +895,6 @@ body {
   }
 }
 
-/* ===== DESKTOP ===== */
 
 @media screen and (min-width: 1158px) {
   .footer {
