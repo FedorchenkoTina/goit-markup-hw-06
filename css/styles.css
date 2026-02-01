@@ -274,9 +274,8 @@ body {
   }
 
   .contacts-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+   display: flex;
+   gap: 40px;
   }
 
   .burger-btn {
