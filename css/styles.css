@@ -85,11 +85,6 @@ body {
   color: #2e2f42;
 }
 
-
-.nav-list {
-  display: none;
-}
-
 .nav-link {
   display: block;
   padding: 24px 0;
@@ -121,11 +116,6 @@ body {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-}
-
-
-.contacts {
-  display: none;
 }
 
 .contacts-list {
@@ -177,6 +167,16 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.mobile-contacts,
+.mobile-social-list {
+  display: none;
+}
+
+.mobile-menu.is-open .mobile-contacts,
+.mobile-menu.is-open .mobile-social-list {
+  display: block;
 }
 
 .mobile-menu-container {
@@ -240,10 +240,11 @@ body {
 }
 
 
-.mobile-socials {
+.mobile-social-list {
   display: flex;
   gap: 40px;
 }
+
 
 
 @media screen and (min-width: 768px) {
