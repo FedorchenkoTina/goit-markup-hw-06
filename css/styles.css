@@ -302,9 +302,14 @@ body {
     font-style: normal; 
   }
 
-   .contacts-list {
-    display: flex;
+  .contacts-list {
+    flex-direction: row;
     gap: 40px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .nav-list {
