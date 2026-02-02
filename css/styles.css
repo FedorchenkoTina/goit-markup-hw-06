@@ -188,15 +188,35 @@ body {
   justify-content: space-between;
 }
 
-
 .menu-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
-  border: none;
-  background: transparent;
+  width: 24px;   
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 50%; 
+  background-color: #e7e9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+
+  --fill-circle: #e7e9fc; 
+  --fill-cross: #2e2f42;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  background-color: #404bbf; 
+  border: none;              
+  --fill-circle: #404bbf;    
+  --fill-cross: #ffffff;     
+}
 
 .mobile-nav-list {
   display: flex;
@@ -461,8 +481,6 @@ body {
 }
 
 
-/* ===== FEATURES ===== */
-
 .features {
   padding: 96px 0;
 }
@@ -473,9 +491,16 @@ body {
   gap: 72px;
 }
 
+.feature-item {
+  width: 100%;
+}
+
+.feature-icon-wrap {
+  display: none; /* Прячем иконки на мобилках 🚫 */
+}
+
 .feature-title {
   margin-bottom: 8px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -490,18 +515,7 @@ body {
   color: #434455;
 }
 
-.feature-item {
-  width: 100%;
-}
-
-.feature-icon-wrap {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  .features {
-    padding: 96px 0;
-  }
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -509,7 +523,7 @@ body {
   }
 
   .feature-item {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2); 
   }
 
   .feature-title {
@@ -517,80 +531,32 @@ body {
   }
 }
 
-  .feature-icon-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
-
-    background-color: #f4f4fd;
-    border-radius: 4px;
-  }
-
-  .features {
-    padding: 120px 0;
-  }
-
-  .features-list {
-    gap: 24px;
-  }
-
-  .feature-item {
-    width: calc((100% - 72px) / 4);
-  }
-
-  .feature-icon-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    margin-bottom: 8px;
-    background-color: #f4f4fd;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-  }
-
-  .feature-title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    text-align: left;
-  }
-
-  .feature-text {
-    font-weight: 400;
-  }
-
 @media screen and (min-width: 1158px) {
   .features {
     padding: 120px 0;
   }
 
   .features-list {
-    flex-wrap: nowrap;
     gap: 24px;
   }
 
   .feature-item {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4); /* Четыре колонки */
   }
 
   .feature-icon-wrap {
-    display: flex;
+    display: flex; /* Показываем иконки ТОЛЬКО ТУТ ✅ */
     align-items: center;
     justify-content: center;
-    width: 264px;
     height: 112px;
-    margin-bottom: 8px;
     background-color: #f4f4fd;
     border-radius: 4px;
+    margin-bottom: 8px;
   }
 
   .feature-title {
     font-size: 20px;
+    font-weight: 500;
     line-height: 1.2;
   }
 }
@@ -603,7 +569,6 @@ body {
 
 .team-title {
   margin-bottom: 72px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -616,6 +581,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 72px;
+  align-items: center;
 }
 
 .team-item {
@@ -625,6 +591,8 @@ body {
     0 2px 1px rgba(46, 47, 66, 0.08),
     0 1px 1px rgba(46, 47, 66, 0.16),
     0 1px 6px rgba(46, 47, 66, 0.08);
+  max-width: 264px; 
+  margin: 0 auto;
 }
 
 .team-content {
@@ -763,6 +731,9 @@ body {
   width: 100%;
   background-color: #ffffff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+              0 1px 1px rgba(46, 47, 66, 0.16),
+              0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-img {
@@ -791,12 +762,6 @@ body {
   color: #434455;
 }
 
-.portfolio-item:hover {
-  box-shadow:
-    0 2px 1px rgba(46, 47, 66, 0.08),
-    0 1px 1px rgba(46, 47, 66, 0.16),
-    0 1px 6px rgba(46, 47, 66, 0.08);
-}
 .portfolio-card-content {
   padding: 32px 16px;
 
@@ -916,7 +881,14 @@ body {
   }
 
   .portfolio-item {
-    width: calc((100% - 48px) / 3);
+  box-shadow: none;
+  width: calc((100% - 48px) / 3);
+}
+
+  .portfolio-item:hover {
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+                0 1px 1px rgba(46, 47, 66, 0.16),
+                0 1px 6px rgba(46, 47, 66, 0.08); 
   }
 }
 
@@ -1067,6 +1039,8 @@ body {
     align-items: flex-start;
     text-align: left;
     gap: 72px;
+    width: 584px;
+    margin: 0 auto;
   }
 
   .footer-group {
