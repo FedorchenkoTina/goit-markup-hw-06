@@ -85,6 +85,10 @@ body {
   color: #2e2f42;
 }
 
+.logo-footer .logo-accent {
+  color: #f4f4fd;
+}
+
 .nav-link {
   display: block;
   padding: 24px 0;
@@ -116,6 +120,13 @@ body {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; 
+  justify-content: center; 
 }
 
 .contacts-list {
@@ -423,9 +434,10 @@ body {
   }
 
   .hero-title {
-    max-width: 496px;
+    max-width: 216px;
     font-size: 56px;
     line-height: 1.07;
+    margin: 0 auto;
     margin-bottom: 36px;
   }
 
@@ -676,23 +688,32 @@ body {
     padding: 96px 0;
   }
 
-  .team-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 64px 24px;
-  }
-
   .team-item {
     width: calc((100% - 24px) / 2);
     max-width: 264px;
   }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    align-items: baseline;
+  }
 }
+
 
 
 @media screen and (min-width: 1158px) {
   .team {
     padding: 120px 0;
+    display: block;
   }
 
   .team-list {
@@ -1275,6 +1296,13 @@ body {
 
 .checkbox-input:checked + .checkbox-custom svg {
   opacity: 1;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 72px; 
+  align-items: baseline;
 }
 
 
