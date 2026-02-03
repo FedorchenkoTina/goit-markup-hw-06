@@ -344,7 +344,14 @@ body {
 
   .nav-list {
     display: flex; 
+    flex-direction: row;
     gap: 40px; 
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .burger-btn {
@@ -510,7 +517,7 @@ body {
 }
 
 .feature-icon-wrap {
-  display: none; /* Прячем иконки на мобилках 🚫 */
+  display: none; 
 }
 
 .feature-title {
@@ -719,8 +726,10 @@ body {
   }
 
   .team-list {
+    display: flex;
     flex-wrap: nowrap;
     gap: 24px;
+    justify-content: center;
   }
 
   .team-item {
@@ -1059,8 +1068,7 @@ body {
   }
 
   .footer-container {
-    flex-direction: row;
-    flex-direction: row;
+    flex-direction: column;
     align-items: baseline;
     text-align: left;
     justify-content: center;
@@ -1095,9 +1103,12 @@ body {
   }
 
   .footer-container {
+    display: flex;
     flex-direction: row;
     align-items: baseline;
-    gap: 80px;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 0; 
   }
 
   .footer-group {
@@ -1105,6 +1116,14 @@ body {
     display: flex; 
     align-items: baseline;
     margin-right: 80px; 
+  }
+
+   .footer-logo-box {
+    margin-right: 120px;
+  }
+  
+  .footer-social-box {
+    margin-right: 80px;
   }
 }
 
