@@ -943,6 +943,11 @@ body {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+  color: #4d5ae5;
+}
+
+.logo-footer .logo-accent {
+  color: #f4f4fd;
 }
 
 .footer-left .logo {
@@ -1055,11 +1060,10 @@ body {
 
   .footer-container {
     flex-direction: row;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: baseline;
     text-align: left;
-    gap: 72px;
-    width: 584px;
-    margin: 0 auto;
+    justify-content: center;
   }
 
   .footer-group {
@@ -1297,12 +1301,7 @@ body {
   opacity: 1;
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 72px; 
-  align-items: baseline;
-}
+
 
 
 
