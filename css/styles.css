@@ -270,12 +270,10 @@ body {
   color: #4d5ae5;
 }
 
-
 .mobile-social-list {
   display: flex;
   gap: 40px;
 }
-
 
 
 @media screen and (min-width: 768px) {
@@ -368,6 +366,7 @@ body {
   text-align: center;
 }
 
+
 @media (min-resolution: 2dppx) {
   .hero {
     background-image:
@@ -378,6 +377,7 @@ body {
       url("../images/photo-11.2x.jpg");
   }
 }
+
 
 .hero-container {
   display: flex;
@@ -448,6 +448,7 @@ body {
 }
 }
 
+
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image:
@@ -458,6 +459,7 @@ body {
       url("../images/photo-11.2x.jpg");
   }
 }
+
 
 @media screen and (min-width: 1158px) {
   .hero {
@@ -542,6 +544,7 @@ body {
     text-align: left;
   }
 }
+
 
 @media screen and (min-width: 1158px) {
   .features {
@@ -648,7 +651,6 @@ body {
   margin: 0; 
   padding: 0; 
 }
-
 
 .team .social-list {
   display: flex;
@@ -852,7 +854,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-
 .portfolio-info {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -913,7 +914,6 @@ body {
   }
 }
 
-
 .footer {
   background-color: #2e2f42;
   padding: 96px 0;
@@ -928,7 +928,6 @@ body {
   gap: 72px;
   text-align: center;
 }
-
 
 .footer-group {
   display: flex;
@@ -955,7 +954,6 @@ body {
   max-width: 264px;
   line-height: 1.5;
 }
-
 
 .footer-social-title {
   margin-bottom: 16px;
@@ -1137,6 +1135,7 @@ body {
     0 1px 3px rgba(0,0,0,.12),
     0 2px 1px rgba(0,0,0,.2);
 }
+
 
 @media screen and (min-width: 768px) {
   .modal {
