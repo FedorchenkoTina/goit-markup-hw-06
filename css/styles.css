@@ -441,11 +441,10 @@ body {
   }
 
   .hero-title {
-    max-width: 216px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
-    margin: 0 auto;
-    margin-bottom: 36px;
+    margin: 0 auto 36px;
   }
 
   .contacts-list {
@@ -470,6 +469,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .hero {
+    padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
     background-image:
@@ -699,13 +699,13 @@ body {
 
   .team-item {
     width: calc((100% - 24px) / 2);
-    max-width: 264px;
+    margin: 0;
   }
 
   .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    flex-direction: row; 
+    flex-wrap: wrap;     
+    gap: 64px 24px;     
     justify-content: center;
   }
 
@@ -722,19 +722,15 @@ body {
 @media screen and (min-width: 1158px) {
   .team {
     padding: 120px 0;
-    display: block;
   }
 
   .team-list {
-    display: flex;
     flex-wrap: nowrap;
     gap: 24px;
-    justify-content: center;
   }
 
   .team-item {
     width: calc((100% - 72px) / 4);
-    max-width: 264px;
   }
 }
 
