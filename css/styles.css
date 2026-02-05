@@ -178,6 +178,7 @@ body {
   inset: 0;
   background-color: #ffffff;
   opacity: 0;
+  z-index: 999;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4,0,0.2,1),
@@ -231,12 +232,21 @@ body {
               border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-close-btn svg {
+  fill: #2e2f42;
+}
+
 .menu-close-btn:hover,
 .menu-close-btn:focus {
   background-color: #404bbf; 
   border: none;              
   --fill-circle: #404bbf;    
   --fill-cross: #ffffff;     
+}
+
+.menu-close-btn:hover svg,
+.menu-close-btn:focus svg {
+  fill: #ffffff;
 }
 
 .mobile-nav-list {
@@ -292,6 +302,16 @@ body {
 
 .mobile-socials svg {
   fill: #4d5ae5;
+}
+
+.mobile-social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -943,7 +963,7 @@ body {
 
 .footer {
   background-color: #2e2f42;
-  padding: 96px 0;
+  padding: 48px 0;
   color: #f4f4fd;
 }
 
@@ -951,10 +971,9 @@ body {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 72px;
-  text-align: center;
-  padding: 0 108px;
+  text-align: left;
 }
 
 .footer-group {
@@ -1094,8 +1113,7 @@ body {
   .footer-container {
     gap: 72px;
     flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
+    align-items: baseline;
   }
 
   .footer-group {
@@ -1209,6 +1227,7 @@ body {
 
 .modal-close svg {
   fill: #2e2f42;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-close:hover,
@@ -1341,7 +1360,7 @@ body {
 .checkbox-custom svg {
   width: 10px;
   height: 8px;
-  fill: #f4f4fd;
+  fill: #2e2f42z;
   opacity: 0;
 }
 
